@@ -266,7 +266,7 @@ class DriverData_audio(torch.utils.data.Dataset):
         self.t_transform = t_transform  # 使用输入的t_transform
         self.t_images = t_images  # 新增的t_images参数
         # build model
-        self.flame_model = FLAMEModel(n_shape=100, n_exp=50, scale=4.6, no_lmks=True)
+        self.flame_model = FLAMEModel(n_shape=300, n_exp=50, scale=4.6, no_lmks=True)
         # build feature data
         if feature_data is None:
             raise ValueError("feature_data must be provided when using dictionary input.")
@@ -308,7 +308,7 @@ class DriverData_audio(torch.utils.data.Dataset):
                 this_record[key] = torch.tensor(this_record[key])
 
         t_points = self.flame_model(
-            shape_params=this_record['shape'][None], pose_params=this_record['pose'][None],
+            shape_params=self.f_shape[None], pose_params=this_record['pose'][None],
             expression_params=this_record['exp'][None]
         )[0].float()
         t_image = self.t_images[frame_key]  # 从t_images中获取对应的t_image
