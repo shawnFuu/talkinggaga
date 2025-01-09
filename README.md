@@ -3,6 +3,7 @@
 /data/fuxiaowen/talkinggaga/environment.yml
 ```
 talkinggaga/GAGAvatar/diff-gaussian-rasterization需要按GAGAvatar指引安装
+
 psbody-mesh==0.4需要clone原仓库安装，参考https://blog.csdn.net/weixin_51352126/article/details/134614580
 
 然后下载并把资源放置在相应的位置
