@@ -1,6 +1,6 @@
 先按照environment.yml安装conda环境
 ```
-/data/fuxiaowen/talkinggaga/environment.yml
+conda env create -f /data/fuxiaowen/talkinggaga/environment.yml
 ```
 talkinggaga/GAGAvatar/diff-gaussian-rasterization需要按GAGAvatar指引安装
 
