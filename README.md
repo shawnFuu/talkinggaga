@@ -18,3 +18,6 @@ talkinggaga_asset/GAGAvatar/assets放置在talkinggaga/GAGAvatar
 
 然后请检查代码文件所有带fuxiaowen的地方，替换成你自己的文件夹路径
 
+# Run
+
+运行talkinggaga/GAGAvatar/test.py即可
