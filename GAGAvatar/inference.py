@@ -127,7 +127,11 @@ def inference_audio(image_path, audio_path, coef_path, style_path, output_path, 
     for rep_idx, current_coef_dict in enumerate(coef_dict):
         # 构建driver数据
         print(f"generate video {rep_idx}......")
-        driver_dataset = DriverData_audio({'audio': current_coef_dict}, t_images, t_transform, feature_data, meta_cfg.DATASET.POINT_PLANE_SIZE)
+        if len(coef_dict) == 1:
+            t_images_rep = t_images.squeeze(0)
+        else:
+            t_images_rep = t_images[rep_idx].squeeze(0)
+        driver_dataset = DriverData_audio({'audio': current_coef_dict}, t_images_rep, t_transform, feature_data, meta_cfg.DATASET.POINT_PLANE_SIZE)
         driver_dataloader = torch.utils.data.DataLoader(driver_dataset, batch_size=1, num_workers=1, shuffle=False)
 
         driver_dataloader = lightning_fabric.setup_dataloaders(driver_dataloader)

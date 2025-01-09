@@ -248,11 +248,14 @@ class GAGAvatar(nn.Module):
 
         t_image, t_points, t_transform = batch['t_image'], batch['t_points'], batch['t_transform'] # t_image [1, 3, 512, 512]
         if t_image.shape[-1] == 3:
-            t_image = t_image.permute(0, 3, 1, 2).squeeze(0)
+            if t_image.dim() == 5:
+                t_image = t_image.permute(0, 1, 4, 2, 3)
+            else:
+                t_image = t_image.permute(0, 3, 1, 2).squeeze(0)
         # t_image有，t_points就是prediction[i],t_transform也没有，但是可以用feature_data['transform_matrix']
         
         gs_params['xyz'][:, :5023] = t_points # (audio)只需要替换t_points; Q:可能导致推理图像多余的部分直接粘贴
-        frame_idx = str(batch["infos"]["t_key"]).split('[')[1].split(']')[0]
+        # frame_idx = str(batch["infos"]["t_key"]).split('[')[1].split(']')[0]
         # save_points_to_ply(
         #     gs_params['xyz'],
         #     "/data/fuxiaowen/gaga/trying_demo/gs_points", 
