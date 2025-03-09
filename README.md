@@ -2,6 +2,8 @@
 
 我们基于GAGAvatar开发了可语音驱动的数字人模型，主要思路为借助DiffPoseTalk输入音频生成Flame参数，其余流程遵循GAGAvatar的pipeline。
 
+# 环境
+
 先按照environment.yml安装conda环境
 ```
 conda env create -f /data/fuxiaowen/talkinggaga/environment.yml
