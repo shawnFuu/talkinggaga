@@ -7,13 +7,14 @@
 
 # 结果
 <div align="center">
-    <img src="https://raw.githubusercontent.com/shawnFuu/talkinggaga/main/assets/harry.png" width="300">
+    <img src="https://raw.githubusercontent.com/shawnFuu/talkinggaga/main/assets/harry.png" width="300" style="margin-right: 20px;">
     <img src="https://raw.githubusercontent.com/shawnFuu/talkinggaga/main/assets/cxk.gif" width="400">
 </div>
-<div align="center">
-    <img src="https://raw.githubusercontent.com/shawnFuu/talkinggaga/main/assets/menglu.png" width="300">
+<div align="center" style="margin-top: 20px;">
+    <img src="https://raw.githubusercontent.com/shawnFuu/talkinggaga/main/assets/menglu.png" width="300" style="margin-right: 20px;">
     <img src="https://raw.githubusercontent.com/shawnFuu/talkinggaga/main/assets/menglu.gif" width="400">
 </div>
+
 
 
 # 环境
