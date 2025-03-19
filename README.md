@@ -7,11 +7,11 @@
 
 # 结果
 <div align="center">
-    <img src="https://raw.githubusercontent.com/shawnFuu/talkinggaga/main/assets/harry.png" width="380">
+    <img src="https://raw.githubusercontent.com/shawnFuu/talkinggaga/main/assets/harry.png" width="300">
     <img src="https://raw.githubusercontent.com/shawnFuu/talkinggaga/main/assets/cxk.gif" width="400">
 </div>
 <div align="center">
-    <img src="https://raw.githubusercontent.com/shawnFuu/talkinggaga/main/assets/menglu.png" width="380">
+    <img src="https://raw.githubusercontent.com/shawnFuu/talkinggaga/main/assets/menglu.png" width="300">
     <img src="https://raw.githubusercontent.com/shawnFuu/talkinggaga/main/assets/menglu.gif" width="400">
 </div>
 
