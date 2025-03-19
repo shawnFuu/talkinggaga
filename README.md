@@ -6,7 +6,9 @@
 我们的方法包含两个分支：重建模块与表情驱动模块。我们使用双提升方法（dual-lifting）生成头部高斯从而得到初步结果，然后使用神经渲染器（neural renderer）获得优化结果。我们利用[DiffPoseTalk](https://github.com/DiffPoseTalk/DiffPoseTalk)强大的生成能力将语音映射为FLAME模型参数，从而驱动头部口型变化。
 
 # 结果
-![哈利波特](https://github.com/shawnFuu/talkinggaga/blob/main/assets/harry.png) ![驱动结果](https://github.com/shawnFuu/talkinggaga/blob/main/assets/cxk.gif)
+<img src="https://github.com/shawnFuu/talkinggaga/blob/main/assets/harry.png" width="200">
+<img src="https://github.com/shawnFuu/talkinggaga/blob/main/assets/cxk.gif" width="200">
+
 
 # 环境
 
